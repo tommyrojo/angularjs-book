@@ -3,5 +3,5 @@ var connect = require('connect'),
 
 var app = connect();
 
-app.use(serveStatic("../angularjs"));
-app.listen(5000);
+app.use(serveStatic("../angularjs-book"));
+app.listen(5001);

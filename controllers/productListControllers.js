@@ -1,4 +1,5 @@
 angular.module("sportsStore")
+<<<<<<< HEAD
     .constant("productListActiveClass", "btn-primary")
     .constant("productListPageCount", 3)
     .controller("productListCtrl", function ($scope, $filter, 
@@ -35,3 +36,18 @@ angular.module("sportsStore")
             cart.addProduct(product.id, product.name, product.price);
         }
 });
+=======
+	.controller("productListCtrl", function($scope, $filter){
+
+		var selectedCategory = null;
+
+		$scope.selectedCategory = function(newCategory){
+			selectedCategory = newCategory;
+		}
+
+		$scope.categoryFilterFn = function(product){
+			return selectedCategory == null ||
+				product.category == selectedCategory;
+		}
+	});
+>>>>>>> 2bfa7b7f42ffac1bdca28ec493eafc73fa445ae0

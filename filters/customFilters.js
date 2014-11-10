@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 /// <reference path="../angular.js" />
 
 
 angular.module("customFilters", [])
+=======
+﻿angular.module("customFilters", [])
+>>>>>>> 2bfa7b7f42ffac1bdca28ec493eafc73fa445ae0
 .filter("unique", function () {
     return function (data, propertyName) {
         if (angular.isArray(data) && angular.isString(propertyName)) {
@@ -47,4 +51,7 @@ angular.module("customFilters", [])
         }
     }
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2bfa7b7f42ffac1bdca28ec493eafc73fa445ae0
